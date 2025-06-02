@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Beatrice";
+  font-style: normal;
+  font-weight: 400;
+  src: url("src/assets/fonts/BeatriceDeckTRIAL-Regular-BF64829e8e41476.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "Beatrice-light";
+  font-style: normal;
+  font-weight: 200;
+  src: url("src/assets/fonts/BeatriceDeckTRIAL-Thin-BF64829e8e21d70.woff")
+    format("woff");
+}
+
+@layer utilities {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 10s linear infinite;
+  }
+
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fade-in-scale {
+    animation: fade-in-scale 0.3s ease-out;
+  }
+}
