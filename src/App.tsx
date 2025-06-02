@@ -6,7 +6,7 @@ import Advertise from "./components/Advertise";
 function App() {
   return (
     <>
-      <div className="px-4 grid grid-flow-row auto-rows gap-10 min-w-[768px] h-screen">
+      <div className="px-4 grid grid-flow-row auto-rows gap-4 min-w-[768px] h-screen ml-[50px] mr-[50px] mt-[61px] mb-[61px]">
         <NavigationBar />
         <div className="grid auto-rows gap-8">
           <Catalog />
